@@ -9,6 +9,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.dechproduct.coinrankingbycj.data.model.Coin
 import com.example.dechproduct.coinrankingbycj.databinding.ListItemBinding
+import java.text.DecimalFormat
+import kotlin.math.roundToInt
 
 class CoinAdapter(private val context: Context) : RecyclerView.Adapter<CoinViewHolder>() {
 
@@ -49,14 +51,17 @@ class CoinViewHolder(val binding: ListItemBinding, private val context: Context)
     fun bind(coin: Coin) {
         binding.coinTitleTv.text = coin.name
         binding.coinDescTv.text = coin.description
+//        binding.coinPriceTv.text = convertPrice(coin)
         val imageURL = coin.iconUrl
 
         Glide.with(binding.coinImv.context)
             .load(imageURL)
             .into(binding.coinImv)
 
-
     }
+
+    private fun convertPrice(coin: Coin) =
+        "%.2f".format(coin.price.toFloat()) + " $"
 
 
 }

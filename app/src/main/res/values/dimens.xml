@@ -2,9 +2,10 @@
 <resources>
     <dimen name="common_padding">16dp</dimen>
     <dimen name="common_margin">16dp</dimen>
-    <dimen name="name_tv">16dp</dimen>
-    <dimen name="description_tv">14dp</dimen>
+    <dimen name="common_margin_bottom">16dp</dimen>
+
+    <dimen name="title_font_size">16sp</dimen>
+    <dimen name="description_font_size">14sp</dimen>
     <dimen name="icon_size">90dp</dimen>
-
-
+    <dimen name="icon_padding">12dp</dimen>
 </resources>

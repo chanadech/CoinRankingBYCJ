@@ -12,6 +12,7 @@
     <color name="colorPrimaryDark">#1E1E1F</color>
     <color name="colorAccent">#171B1B</color>
     <color name="colorWhite">#FFFFFF</color>
+    <color name="gray">#9f9f9f</color>
 
 
     <color name="description_color">#9E9E9E</color>

@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">CoinRankingBYCJ</string>
+
+    <string name="crypto_coin_image">Crypto coin image</string>
+    <string name="coin_title">Coin title name</string>
+    <string name="coin_description">Coin Description</string>
 </resources>
