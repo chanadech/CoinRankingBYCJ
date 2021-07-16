@@ -63,13 +63,7 @@ dependencies {
     // Volley, network operations
     implementation 'com.android.volley:volley:1.2.0'
 
-    // Picasso, use to load png, jpg
-    implementation 'com.squareup.picasso:picasso:2.71828'
-
-    // Coil, use to load SVG
-    implementation("io.coil-kt:coil:0.11.0")
-    implementation("io.coil-kt:coil-svg:0.11.0")
-
+    // CardView
     implementation 'androidx.cardview:cardview:1.0.0'
     implementation 'androidx.recyclerview:recyclerview:1.2.1'
 
@@ -81,9 +75,6 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
     // Saved state module for ViewModel
     implementation "androidx.lifecycle:lifecycle-viewmodel-savedstate:$lifecycle_version"
-    // Annotation processor
-    //kapt "androidx.lifecycle:lifecycle-compiler:$lifecycle_version"
-    // alternately - if using Java8, use the following instead of lifecycle-compiler
     implementation "androidx.lifecycle:lifecycle-common-java8:$lifecycle_version"
     implementation "androidx.room:room-runtime:$room_version"
     kapt "androidx.room:room-compiler:$room_version"
@@ -103,5 +94,8 @@ dependencies {
     //Glide
     implementation "com.github.bumptech.glide:glide:$Glide_version"
     kapt "com.github.bumptech.glide:compiler:$Glide_version"
+    //Glide SVG
+    implementation 'com.github.corouteam:GlideToVectorYou:v2.0.0'
+
 
 }
